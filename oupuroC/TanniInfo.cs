@@ -15,6 +15,7 @@ namespace oupuroC
         public static Dictionary<string, Kamoku_states> gakusaiA_ButtonToBool = new Dictionary<string, Kamoku_states>();
         public static Dictionary<string, Kamoku_states> gakubu_h_ButtonToBool = new Dictionary<string, Kamoku_states>();
         public static Dictionary<string, Kamoku_states> gakubu_s_ButtonToBool = new Dictionary<string, Kamoku_states>();
+        public static Dictionary<string, Kamoku_states> gakka_h_ButtonToBool = new Dictionary<string, Kamoku_states>();
 
         //Dictionaryを引数にして単位数計算ができる
         public static int CalculateTanni(Dictionary<string, Kamoku_states> hoge)
