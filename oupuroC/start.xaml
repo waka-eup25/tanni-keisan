@@ -36,21 +36,21 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Button Content="教養必修科目" Margin="5" Grid.Row="0" Grid.Column="0"
-                Click="Button_Click_kyoyo_h"/>
+                Click="Button_Click_kyoyo_h" FontSize="20"/>
             <Button Content="教養選択科目" Margin="5" Grid.Row="0" Grid.Column="1"
-                Click="Button_Click_kyoyo_s"/>
+                Click="Button_Click_kyoyo_s" FontSize="20"/>
             <Button Content="学際領域A・B&#xa;教養領域A・B" Margin="5" Grid.Row="1" Grid.Column="0"
-                Click="Button_Click_kyoyo_gakusai"/>
+                Click="Button_Click_kyoyo_gakusai" FontSize="20"/>
             <Button Content="学部共通必修科目" Margin="5" Grid.Row="1" Grid.Column="1"
-                Click="Button_Click_gakubu_h"/>
+                Click="Button_Click_gakubu_h" FontSize="20"/>
             <Button Content="学部共通選択科目" Margin="5" Grid.Row="2" Grid.Column="0"
-                Click="Button_Click_gakubu_s"/>
+                Click="Button_Click_gakubu_s" FontSize="20"/>
             <Button Content="学科専門必修科目" Margin="5" Grid.Row="2" Grid.Column="1"
-                Click="Button_Click_gakka_h"/>
+                Click="Button_Click_gakka_h" FontSize="20"/>
             <Button Content="学科専門選択必修科目" Margin="5" Grid.Row="3" Grid.Column="0"
-                Click="Button_Click_gakka_sh"/>
+                Click="Button_Click_gakka_sh" FontSize="20"/>
             <Button Content="学科専門選択科目" Margin="5" Grid.Row="3" Grid.Column="1"
-                Click="Button_Click_gakka_s"/>
+                Click="Button_Click_gakka_s" FontSize="20"/>
         </Grid>
         <Grid Grid.Row="5" Grid.Column="0">
             <Grid.ColumnDefinitions>
@@ -59,12 +59,12 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Button Content="その他の科目" Margin="5"  Grid.Column="0" 
-                Click="Button_Click_sonota"/>
+                Click="Button_Click_sonota" FontSize="20"/>
             <Button Content="残りの必要単位数一覧" Margin="5" Grid.Column="1" 
-                Click="Button_Click_itiran"/>
+                Click="Button_Click_itiran" FontSize="20"/>
             <Button Content="終了" Foreground="White" Margin="5" Grid.Column="2" 
                 Background="Black"
-                Click="Button_Click_quit"/>
+                Click="Button_Click_quit" FontSize="20"/>
         </Grid>
     </Grid>
 </Page>
