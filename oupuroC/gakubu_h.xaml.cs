@@ -25,7 +25,7 @@ namespace oupuroC
         {
             InitializeComponent();
             this.mainWindow = mainWindow;
-            //SetDictionary();
+            SetDictionary();
 
             // ボタンを押していたら画面遷移して戻ってきてもボタンを押したままにしておく
             void f(Button hoge)
@@ -79,7 +79,7 @@ namespace oupuroC
             }
             if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(hyogenho.Name))
             {
-                TanniInfo.gakubu_h_ButtonToBool.Add(hyogenho.Name, new Kamoku_states(0, 1));
+                TanniInfo.gakubu_h_ButtonToBool.Add(hyogenho.Name, new Kamoku_states(0, 2));
             }
             if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(komisukiA.Name))
             {
@@ -87,11 +87,11 @@ namespace oupuroC
             }
             if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(prog2.Name))
             {
-                TanniInfo.gakubu_h_ButtonToBool.Add(prog2.Name, new Kamoku_states(0, 1));
+                TanniInfo.gakubu_h_ButtonToBool.Add(prog2.Name, new Kamoku_states(0, 2));
             }
             if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(pbl.Name))
             {
-                TanniInfo.gakubu_h_ButtonToBool.Add(pbl.Name, new Kamoku_states(0, 1));
+                TanniInfo.gakubu_h_ButtonToBool.Add(pbl.Name, new Kamoku_states(0, 2));
             }
             if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(komisukiB.Name))
             {
@@ -99,7 +99,7 @@ namespace oupuroC
             }
             if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(sekyu.Name))
             {
-                TanniInfo.gakubu_h_ButtonToBool.Add(sekyu.Name, new Kamoku_states(0, 1));
+                TanniInfo.gakubu_h_ButtonToBool.Add(sekyu.Name, new Kamoku_states(0, 2));
             }
             if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(hoho.Name))
             {
