@@ -1,0 +1,503 @@
+﻿<Page x:Class="oupuroC.kyoyo_gakusai"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:oupuroC"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Background="White"
+      Title="kyoyo_gakusai">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="取得済みの単位を選択してください" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="12" Margin="1"
+               Foreground="White" Background="Black"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="20"
+               />
+        <Label Grid.Row="1" Grid.Column="0" Margin="1"
+               Foreground="White" Background="Black"/>
+        <Label Grid.Row="1" Grid.Column="1" Margin="1"
+               Foreground="White" Background="Black"/>
+        <Label Content="科目名" Grid.Row="1" Grid.Column="2" Margin="1"
+               Foreground="White" Background="Black"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"
+               />
+        <Label Content="単位数" Grid.Row="1" Grid.Column="3" Margin="1"
+               Foreground="White" Background="Black"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="8"
+               />
+
+        <Label Grid.Row="1" Grid.Column="4" Margin="1"
+               Foreground="White" Background="Black"/>
+        <Label Grid.Row="1" Grid.Column="5" Margin="1"
+               Foreground="White" Background="Black"/>
+        <Label Content="科目名" Grid.Row="1" Grid.Column="6" Margin="1"
+               Foreground="White" Background="Black"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"
+               />
+        <Label Content="単位数" Grid.Row="1" Grid.Column="7" Margin="1"
+               Foreground="White" Background="Black"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="8"
+               />
+
+        <Label Grid.Row="1" Grid.Column="8" Margin="1"
+               Foreground="White" Background="Black"/>
+        <Label Grid.Row="1" Grid.Column="9" Margin="1"
+               Foreground="White" Background="Black"/>
+        <Label Content="科目名" Grid.Row="1" Grid.Column="10" Margin="1"
+               Foreground="White" Background="Black"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"
+               />
+        <Label Content="単位数" Grid.Row="1" Grid.Column="11" Margin="1"
+               Foreground="White" Background="Black"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="8"
+               />
+
+        <Button x:Name="sisouA" Content="○" Grid.Row="2" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養A" Grid.Row="2" Grid.Column="1"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="思想と芸術A" Grid.Row="2" Grid.Column="2"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="2" Grid.Column="3"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="sisouB" Content="○" Grid.Row="3" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養A" Grid.Row="3" Grid.Column="1"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="思想と芸術B" Grid.Row="3" Grid.Column="2"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="3" Grid.Column="3"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="tiikiA" Content="○" Grid.Row="4" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養A" Grid.Row="4" Grid.Column="1"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="地域の文化と歴史A" Grid.Row="4" Grid.Column="2"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="4" Grid.Column="3"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="tiikiB" Content="○" Grid.Row="5" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養A" Grid.Row="5" Grid.Column="1"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="地域の文化と歴史B" Grid.Row="5" Grid.Column="2"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="5" Grid.Column="3"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="sinriA" Content="○" Grid.Row="6" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養A" Grid.Row="6" Grid.Column="1"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="心理と行動A" Grid.Row="6" Grid.Column="2"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="6" Grid.Column="3"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="sinriB" Content="○" Grid.Row="7" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養A" Grid.Row="7" Grid.Column="1"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="心理と行動B" Grid.Row="7" Grid.Column="2"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="7" Grid.Column="3"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="keieiA" Content="○" Grid.Row="8" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養A" Grid.Row="8" Grid.Column="1"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="経営と経済A" Grid.Row="8" Grid.Column="2"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="8" Grid.Column="3"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="keieiB" Content="○" Grid.Row="9" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養A" Grid.Row="9" Grid.Column="1"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="経営と経済B" Grid.Row="9" Grid.Column="2"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="9" Grid.Column="3"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="syakaiA" Content="○" Grid.Row="10" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養A" Grid.Row="10" Grid.Column="1"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="現代の社会A" Grid.Row="10" Grid.Column="2"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="10" Grid.Column="3"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="syakaiB" Content="○" Grid.Row="11" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養A" Grid.Row="11" Grid.Column="1"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="現代の社会B" Grid.Row="11" Grid.Column="2"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="11" Grid.Column="3"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+
+        <Button x:Name="kotoba" Content="○" Grid.Row="2" Grid.Column="4" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養A" Grid.Row="2" Grid.Column="5"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="世界のことばと文化" Grid.Row="2" Grid.Column="6"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="2" Grid.Column="7"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="nihon" Content="○" Grid.Row="3" Grid.Column="4" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養A" Grid.Row="3" Grid.Column="5"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="日本国憲法" Grid.Row="3" Grid.Column="6"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="3" Grid.Column="7"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="suugaku" Content="○" Grid.Row="4" Grid.Column="4" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養B" Grid.Row="4" Grid.Column="5"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="数学の世界" Grid.Row="4" Grid.Column="6"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="4" Grid.Column="7"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="suuri" Content="○" Grid.Row="5" Grid.Column="4" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養B" Grid.Row="5" Grid.Column="5"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="数理の構造" Grid.Row="5" Grid.Column="6"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="5" Grid.Column="7"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="buturi" Content="○" Grid.Row="6" Grid.Column="4" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養B" Grid.Row="6" Grid.Column="5"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="物理の世界" Grid.Row="6" Grid.Column="6"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="6" Grid.Column="7"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="sizen" Content="○" Grid.Row="7" Grid.Column="4" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養B" Grid.Row="7" Grid.Column="5"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="自然と物理" Grid.Row="7" Grid.Column="6"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="7" Grid.Column="7"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="kagaku" Content="○" Grid.Row="8" Grid.Column="4" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養B" Grid.Row="8" Grid.Column="5"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="化学の世界" Grid.Row="8" Grid.Column="6"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="8" Grid.Column="7"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="seikatu" Content="○" Grid.Row="9" Grid.Column="4" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養B" Grid.Row="9" Grid.Column="5"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="生活の科学" Grid.Row="9" Grid.Column="6"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="9" Grid.Column="7"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="seimei" Content="○" Grid.Row="10" Grid.Column="4" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養B" Grid.Row="10" Grid.Column="5"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="生命科学" Grid.Row="10" Grid.Column="6"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="10" Grid.Column="7"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="seibutu" Content="○" Grid.Row="11" Grid.Column="4" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養B" Grid.Row="11" Grid.Column="5"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="生物と環境" Grid.Row="11" Grid.Column="6"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="11" Grid.Column="7"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="kagaku2" Content="○" Grid.Row="2" Grid.Column="8" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="教養B" Grid.Row="2" Grid.Column="9"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="科学と技術" Grid.Row="2" Grid.Column="10"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="2" Grid.Column="11"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="sisei" Content="○" Grid.Row="3" Grid.Column="8" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="学際A" Grid.Row="3" Grid.Column="9"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="わが街・浜松の市政" Grid.Row="3" Grid.Column="10"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="3" Grid.Column="11"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="tiikisyakai" Content="○" Grid.Row="4" Grid.Column="8" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="学際A" Grid.Row="4" Grid.Column="9"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="地域社会連携を考える" Grid.Row="4" Grid.Column="10"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="4" Grid.Column="11"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="gensiryoku" Content="○" Grid.Row="5" Grid.Column="8" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="学際A" Grid.Row="5" Grid.Column="9"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="静岡県の防災・減災と原子力" Grid.Row="5" Grid.Column="10"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="10"/>
+        <Label Content="2" Grid.Row="5" Grid.Column="11"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="tiikimedhia" Content="○" Grid.Row="6" Grid.Column="8" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="学際A" Grid.Row="6" Grid.Column="9"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="地域メディア論" Grid.Row="6" Grid.Column="10"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="6" Grid.Column="11"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="zisin" Content="○" Grid.Row="7" Grid.Column="8" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="学際A" Grid.Row="7" Grid.Column="9"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="地震防災" Grid.Row="7" Grid.Column="10"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="7" Grid.Column="11"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="saigai" Content="○" Grid.Row="8" Grid.Column="8" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="学際A" Grid.Row="8" Grid.Column="9"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="災害のリスクマネジメント" Grid.Row="8" Grid.Column="10"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="12"/>
+        <Label Content="2" Grid.Row="8" Grid.Column="11"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="kigyou" Content="○" Grid.Row="9" Grid.Column="8" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="学際A" Grid.Row="9" Grid.Column="9"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="企業論" Grid.Row="9" Grid.Column="10"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="9" Grid.Column="11"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="igaku" Content="○" Grid.Row="10" Grid.Column="8" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="学際A" Grid.Row="10" Grid.Column="9"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="医学と人間" Grid.Row="10" Grid.Column="10"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="10" Grid.Column="11"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Button x:Name="nanoteku" Content="○" Grid.Row="11" Grid.Column="8" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="学際A" Grid.Row="11" Grid.Column="9"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="身近なナノテク" Grid.Row="11" Grid.Column="10"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+        <Label Content="2" Grid.Row="11" Grid.Column="11"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="15"/>
+
+        <Button Content="戻る" Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="7"
+                Foreground="White" Background="Black"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center" 
+                Click="Button_Click_back" Margin="0,34,67,0" Grid.RowSpan="2"/>
+        <Button Content="決定" Grid.Row="11" Grid.Column="6" Grid.ColumnSpan="6"
+                Foreground="White" Background="Black"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center" Margin="66,34,0,0" Grid.RowSpan="2"
+                Click="Butto_Click_kettei"/>
+
+    </Grid>
+</Page>

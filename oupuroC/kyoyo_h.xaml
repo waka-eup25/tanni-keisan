@@ -1,0 +1,150 @@
+﻿<Page x:Class="oupuroC.kyoyo_h"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:oupuroC"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Background="White"
+      Title="kyoyo_h">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="取得済みの単位を選択してください" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Margin="1"
+               Foreground="White" Background="Black"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="45"/>
+        <Label Grid.Row="1" Grid.Column="0" Background="Black" Margin="1"/>
+        <Label Grid.Row="1" Grid.Column="1" Background="Black" Margin="1"/>
+        <Label Content="科目名" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Margin="1"
+               Foreground="White" Background="Black"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="20"/>
+        <Label Content="単位数" Grid.Row="1" Grid.Column="5" Margin="1"
+               Foreground="White" Background="Black"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"
+               FontSize="20"/>
+        
+        <Button x:Name="sinsemi" Content="○" Grid.Row="2" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="1年前期" Grid.Row="2" Grid.Column="1"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"/>
+        <Label Content="新入生セミナー" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"
+               />
+        <Label Content="2" Grid.Row="2" Grid.Column="4"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"/>
+
+        <Button x:Name="suri" Content="○" Grid.Row="3" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="1年前期" Grid.Row="3" Grid.Column="1"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"/>
+        <Label Content="数理・データサイエンス入門" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"
+               />
+        <Label Content="1" Grid.Row="3" Grid.Column="4"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"/>
+
+        <Button x:Name="eikomyu" Content="○" Grid.Row="4" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="1年前期" Grid.Row="4" Grid.Column="1"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"/>
+        <Label Content="英語コミュニケーション" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"
+               />
+        <Label Content="2" Grid.Row="4" Grid.Column="4"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"/>
+
+        <Button x:Name="kyarideza" Content="○" Grid.Row="5" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="1年前期" Grid.Row="5" Grid.Column="1"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"/>
+        <Label Content="キャリアデザイン" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"
+               />
+        <Label Content="1" Grid.Row="5" Grid.Column="4"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"/>
+
+        <Button x:Name="zyohosyori" Content="○" Grid.Row="6" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="1年後期" Grid.Row="6" Grid.Column="1"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"/>
+        <Label Content="情報処理・データサイエンス演習" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"
+               />
+        <Label Content="2" Grid.Row="6" Grid.Column="4"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"/>
+
+        <Button x:Name="eigoensyu" Content="○" Grid.Row="7" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="2年後期" Grid.Row="7" Grid.Column="1"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"/>
+        <Label Content="英語演習" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"
+               />
+        <Label Content="1" Grid.Row="7" Grid.Column="4"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="20"/>
+
+        <Button Content="戻る" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="3"
+                Foreground="White" Background="Black"
+                FontSize="20"
+                Click="Button_Click_back"
+                />
+        <Button Content="決定" Grid.Row="8" Grid.Column="3" Grid.ColumnSpan="2" 
+                FontSize="20"
+                Foreground="White" Background="Black"
+                Click="Butto_Click_kettei"/>
+    </Grid>
+</Page>
