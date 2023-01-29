@@ -48,10 +48,8 @@ namespace oupuroC
 
         private void Button_Click_gakubu_h(object sender, RoutedEventArgs e)
         {
-            /*
             var gakubu_h = new gakubu_h();
             NavigationService.Navigate(gakubu_h);
-            */
         }
 
         private void Button_Click_gakubu_s(object sender, RoutedEventArgs e)
