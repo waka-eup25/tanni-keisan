@@ -65,10 +65,8 @@ namespace oupuroC
         }
         private void Button_Click_gakka_sh(object sender, RoutedEventArgs e)
         {
-            /*
-            var gakka_sh = new gakka_sh();
+            var gakka_sh = new gakka_sh(mainWindow);
             NavigationService.Navigate(gakka_sh);
-            */
         }
 
         private void Button_Click_gakka_s(object sender, RoutedEventArgs e)
