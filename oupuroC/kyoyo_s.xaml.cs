@@ -25,6 +25,60 @@ namespace oupuroC
         {
             InitializeComponent();
             this.mainWindow = mainWindow;
+            SetDictionary();
+
+            // ボタンを押していたら画面遷移して戻ってきてもボタンを押したままにしておく
+            void f(Button hoge)
+            {
+                if (TanniInfo.kyoyo_s_ButtonToBool[hoge.Name].isClicked == 1)
+                {
+                    hoge.Background = buttonClickedColor;
+                }
+                else
+                {
+                    hoge.Background = buttonColor;
+                }
+            }
+
+            // それぞれのボタンについてボタンを押してあるかどうかチェック→ボタンの色を変更
+            f(kisoA);
+            f(kisoB);
+            f(kisoC);
+            f(tyuA);
+            f(tyuB);
+            f(tyuC);
+            f(tyuD);
+            f(zyouA);
+            f(zyouB);
+            f(zyouC);
+            f(zyouD);
+            f(sougou1A);
+            f(sougou1B);
+            f(sougou1C);
+            f(sougou2A);
+            f(sougou2B);
+            f(sougou2C);
+            f(sougou3);
+            f(esp1);
+            f(esp2);
+            f(akademikku);
+            f(bizinesu);
+            f(intenA);
+            f(intenB);
+            f(intenC);
+            f(intenD);
+            f(kaigaiA);
+            f(kaigaiB);
+            f(syosyu_nyumon1);
+            f(syosyu_nyumon2);
+            f(syosyu1);
+            f(syosyu2);
+            f(zitugi1);
+            f(zitugi2);
+            f(ensyu);
+            f(sport1);
+            f(sport2);
+
         }
 
         private void Button_Click_back(object sender, RoutedEventArgs e)
@@ -33,22 +87,186 @@ namespace oupuroC
             NavigationService.Navigate(start);
         }
 
+        private void SetDictionary()
+        {
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(kisoA.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(kisoA.Name, new Kamoku_states(0, 1));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(kisoB.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(kisoB.Name, new Kamoku_states(0, 1));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(kisoC.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(kisoC.Name, new Kamoku_states(0, 1));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(tyuA.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(tyuA.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(tyuB.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(tyuB.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(tyuC.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(tyuC.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(tyuD.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(tyuD.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(zyouA.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(zyouA.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(zyouB.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(zyouB.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(zyouC.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(zyouC.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(zyouD.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(zyouD.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(sougou1A.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(sougou1A.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(sougou1B.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(sougou1B.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(sougou1C.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(sougou1C.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(sougou2A.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(sougou2A.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(sougou2B.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(sougou2B.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(sougou2C.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(sougou2C.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(sougou3.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(sougou3.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(esp1.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(esp1.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(esp2.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(esp2.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(akademikku.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(akademikku.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(bizinesu.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(bizinesu.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(intenA.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(intenA.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(intenB.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(intenB.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(intenC.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(intenC.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(intenD.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(intenD.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(kaigaiA.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(kaigaiA.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(kaigaiB.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(kaigaiB.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(syosyu_nyumon1.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(syosyu_nyumon1.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(syosyu_nyumon2.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(syosyu_nyumon2.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(syosyu1.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(syosyu1.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(syosyu2.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(syosyu2.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(zitugi1.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(zitugi1.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(zitugi2.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(zitugi2.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(ensyu.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(ensyu.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(sport1.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(sport1.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(sport2.Name))
+            {
+                TanniInfo.kyoyo_s_ButtonToBool.Add(sport2.Name, new Kamoku_states(0, 2));
+            }
+        }
+
         SolidColorBrush buttonClickedColor = new SolidColorBrush(Color.FromArgb(0xFF, 0xFF, 0xED, 0xB3));
         SolidColorBrush buttonColor = new SolidColorBrush(Color.FromArgb(0xFF, 221, 221, 221));
         private void Button_Click_kamoku(object sender, RoutedEventArgs e)
         {
             if (sender is Button btn)
             {
-                //選択したら背景色変える
-                if (btn.Background == buttonClickedColor) // 直します
+                // 選択したら背景色変える
+                if (TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(btn.Name))
                 {
-                    btn.Background = buttonColor;
-                }
-                else
-                {
-                    btn.Background = buttonClickedColor;
+                    if (TanniInfo.kyoyo_s_ButtonToBool[btn.Name].isClicked == 0)
+                    {
+                        btn.Background = buttonClickedColor;
+                        // Dictionaryいじる クリックした
+                        TanniInfo.kyoyo_s_ButtonToBool[btn.Name].isClicked = 1;
+                    }
+                    else
+                    {
+                        btn.Background = buttonColor;
+                        // Dictionaryいじる クリックしてない
+                        TanniInfo.kyoyo_s_ButtonToBool[btn.Name].isClicked = 0;
+                    }
                 }
             }
+        }
+
+        private void Button_Click_kettei(object sender, RoutedEventArgs e)
+        {
+            // 教養科目必修の単位数を出力させる
         }
     }
 }

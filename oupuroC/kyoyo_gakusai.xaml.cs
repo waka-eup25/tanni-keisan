@@ -159,7 +159,6 @@ namespace oupuroC
             }
 
             if (!TanniInfo.kyoyoB_ButtonToBool.ContainsKey(suugaku.Name))
-                MessageBox.Show("hjoij");
             {
                 TanniInfo.kyoyoB_ButtonToBool.Add(suugaku.Name, new Kamoku_states(0, 2));
             }
@@ -241,44 +240,54 @@ namespace oupuroC
             if (sender is Button btn)
             {
                 // 選択したら背景色変える
-                if (TanniInfo.kyoyoA_ButtonToBool[btn.Name].isClicked == 0)
+                if(TanniInfo.kyoyoA_ButtonToBool.ContainsKey(btn.Name))
                 {
-                    btn.Background = buttonClickedColor;
-                    // Dictionaryいじる クリックした
-                    TanniInfo.kyoyoA_ButtonToBool[btn.Name].isClicked = 1;
-                }
-                else
-                {
-                    btn.Background = buttonColor;
-                    // Dictionaryいじる クリックしてない
-                    TanniInfo.kyoyoA_ButtonToBool[btn.Name].isClicked = 0;
-                }
-
-                if (TanniInfo.kyoyoB_ButtonToBool[btn.Name].isClicked == 0)
-                {
-                    btn.Background = buttonClickedColor;
-                    // Dictionaryいじる クリックした
-                    TanniInfo.kyoyoB_ButtonToBool[btn.Name].isClicked = 1;
-                }
-                else
-                {
-                    btn.Background = buttonColor;
-                    // Dictionaryいじる クリックしてない
-                    TanniInfo.kyoyoB_ButtonToBool[btn.Name].isClicked = 0;
+                    if (TanniInfo.kyoyoA_ButtonToBool[btn.Name].isClicked == 0)
+                    {
+                        btn.Background = buttonClickedColor;
+                        // Dictionaryいじる クリックした
+                        TanniInfo.kyoyoA_ButtonToBool[btn.Name].isClicked = 1;
+                    }
+                    else
+                    {
+                        btn.Background = buttonColor;
+                        // Dictionaryいじる クリックしてない
+                        TanniInfo.kyoyoA_ButtonToBool[btn.Name].isClicked = 0;
+                    }
                 }
 
-                if (TanniInfo.gakusaiA_ButtonToBool[btn.Name].isClicked == 0)
+                if (TanniInfo.kyoyoB_ButtonToBool.ContainsKey(btn.Name))
                 {
-                    btn.Background = buttonClickedColor;
-                    // Dictionaryいじる クリックした
-                    TanniInfo.gakusaiA_ButtonToBool[btn.Name].isClicked = 1;
+                    if (TanniInfo.kyoyoB_ButtonToBool[btn.Name].isClicked == 0)
+                    {
+                        btn.Background = buttonClickedColor;
+                        // Dictionaryいじる クリックした
+                        TanniInfo.kyoyoB_ButtonToBool[btn.Name].isClicked = 1;
+                    }
+                    else
+                    {
+                        btn.Background = buttonColor;
+                        // Dictionaryいじる クリックしてない
+                        TanniInfo.kyoyoB_ButtonToBool[btn.Name].isClicked = 0;
+                    }
                 }
-                else
+
+                if (TanniInfo.gakusaiA_ButtonToBool.ContainsKey(btn.Name))
                 {
-                    btn.Background = buttonColor;
-                    // Dictionaryいじる クリックしてない
-                    TanniInfo.gakusaiA_ButtonToBool[btn.Name].isClicked = 0;
+                    if (TanniInfo.gakusaiA_ButtonToBool[btn.Name].isClicked == 0)
+                    {
+                        btn.Background = buttonClickedColor;
+                        // Dictionaryいじる クリックした
+                        TanniInfo.gakusaiA_ButtonToBool[btn.Name].isClicked = 1;
+                    }
+                    else
+                    {
+                        btn.Background = buttonColor;
+                        // Dictionaryいじる クリックしてない
+                        TanniInfo.gakusaiA_ButtonToBool[btn.Name].isClicked = 0;
+                    }
                 }
+                    
             }
         }
 

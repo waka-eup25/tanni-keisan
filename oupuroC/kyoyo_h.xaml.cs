@@ -48,6 +48,7 @@ namespace oupuroC
             f(kyarideza);
             f(zyohosyori);
             f(eigoensyu);
+            f(eigoensyu);
         }
         
 

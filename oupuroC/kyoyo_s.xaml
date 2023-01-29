@@ -82,14 +82,14 @@
                VerticalContentAlignment="Center"
                FontSize="10"/>
 
-        <Button Content="○" Grid.Row="2" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="kisoA" Content="○" Grid.Row="2" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="基礎英語A" Grid.Row="2" Grid.Column="1"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
         <Label Content="1" Grid.Row="2" Grid.Column="2"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
-        <Button Content="○" Grid.Row="3" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="kisoB" Content="○" Grid.Row="3" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
 
         <Label Content="基礎英語B" Grid.Row="3" Grid.Column="1"
                HorizontalContentAlignment="Center"
@@ -98,7 +98,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="4" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="kisoC" Content="○" Grid.Row="4" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="基礎英語C" Grid.Row="4" Grid.Column="1"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -106,7 +106,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="5" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="tyuA" Content="○" Grid.Row="5" Grid.Column="0" Margin="1,1,1,0" Click="Button_Click_kamoku" Height="24" VerticalAlignment="Top"/>
         <Label Content="中級英語A" Grid.Row="5" Grid.Column="1"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -114,7 +114,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="6" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="tyuB" Content="○" Grid.Row="6" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="中級英語B" Grid.Row="6" Grid.Column="1"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -122,7 +122,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="7" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="tyuC" Content="○" Grid.Row="7" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="中級英語C" Grid.Row="7" Grid.Column="1"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -130,7 +130,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="8" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="tyuD" Content="○" Grid.Row="8" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="中級英語D" Grid.Row="8" Grid.Column="1"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -138,7 +138,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="9" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="zyouA" Content="○" Grid.Row="9" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="上級英語A" Grid.Row="9" Grid.Column="1"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -146,7 +146,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="10" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="zyouB" Content="○" Grid.Row="10" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="上級英語B" Grid.Row="10" Grid.Column="1"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -154,7 +154,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="11" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="zyouC" Content="○" Grid.Row="11" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="上級英語C" Grid.Row="11" Grid.Column="1"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -162,15 +162,15 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="12" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
-        <Label Content="上級英語C" Grid.Row="12" Grid.Column="1"
+        <Button x:Name="zyouD" Content="○" Grid.Row="12" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Label Content="上級英語D" Grid.Row="12" Grid.Column="1"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
         <Label Content="2" Grid.Row="12" Grid.Column="2"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="13" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="sougou1A" Content="○" Grid.Row="13" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="総合英語ⅠA" Grid.Row="13" Grid.Column="1"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -178,7 +178,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="2" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="sougou1B" Content="○" Grid.Row="2" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="総合英語ⅠB" Grid.Row="2" Grid.Column="4"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -186,7 +186,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="3" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="sougou1C" Content="○" Grid.Row="3" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="総合英語ⅠC" Grid.Row="3" Grid.Column="4"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -194,7 +194,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="4" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="sougou2A" Content="○" Grid.Row="4" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="総合英語ⅡA" Grid.Row="4" Grid.Column="4"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -202,7 +202,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="5" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="sougou2B" Content="○" Grid.Row="5" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="総合英語ⅡB" Grid.Row="5" Grid.Column="4"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -210,7 +210,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="6" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="sougou2C" Content="○" Grid.Row="6" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="総合英語ⅡC" Grid.Row="6" Grid.Column="4"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -218,7 +218,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="7" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="sougou3" Content="○" Grid.Row="7" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="総合英語Ⅲ" Grid.Row="7" Grid.Column="4"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -226,7 +226,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="8" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="esp1" Content="○" Grid.Row="8" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="ESP Ⅰ" Grid.Row="8" Grid.Column="4"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -234,7 +234,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="9" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="esp2" Content="○" Grid.Row="9" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="ESP Ⅱ" Grid.Row="9" Grid.Column="4"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -242,7 +242,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="10" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="akademikku" Content="○" Grid.Row="10" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="アカデミックイングリッシュ" Grid.Row="10" Grid.Column="4"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -250,7 +250,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="11" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="bizinesu" Content="○" Grid.Row="11" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="ビジネスイングリッシュ" Grid.Row="11" Grid.Column="4"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -258,7 +258,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="12" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="intenA" Content="○" Grid.Row="12" Grid.Column="3" Margin="1,0,1,1" Click="Button_Click_kamoku" Height="25" VerticalAlignment="Bottom"/>
         <Label Content="英語インテンシブA" Grid.Row="12" Grid.Column="4"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -266,7 +266,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="13" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="intenB" Content="○" Grid.Row="13" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="英語インテンシブB" Grid.Row="13" Grid.Column="4"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -274,7 +274,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="2" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="intenC" Content="○" Grid.Row="2" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="英語インテンシブC" Grid.Row="2" Grid.Column="7"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -282,7 +282,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="3" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="intenD" Content="○" Grid.Row="3" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="英語インテンシブD" Grid.Row="3" Grid.Column="7"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -290,7 +290,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="4" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="kaigaiA" Content="○" Grid.Row="4" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="英語海外研修A" Grid.Row="4" Grid.Column="7"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -298,7 +298,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="5" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="kaigaiB" Content="○" Grid.Row="5" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="英語海外研修B" Grid.Row="5" Grid.Column="7"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -306,7 +306,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="6" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="syosyu_nyumon1" Content="○" Grid.Row="6" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="初修外国語入門Ⅰ" Grid.Row="6" Grid.Column="7"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -314,7 +314,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="7" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="syosyu_nyumon2" Content="○" Grid.Row="7" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="初修外国語入門Ⅱ" Grid.Row="7" Grid.Column="7"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -322,7 +322,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="8" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="syosyu1" Content="○" Grid.Row="8" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="初修外国語Ⅰ" Grid.Row="8" Grid.Column="7"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -330,7 +330,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="9" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="syosyu2" Content="○" Grid.Row="9" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="初修外国語Ⅱ" Grid.Row="9" Grid.Column="7"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -338,7 +338,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="10" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="zitugi1" Content="○" Grid.Row="10" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="健康体育実技Ⅰ" Grid.Row="10" Grid.Column="7"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -346,7 +346,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="11" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="zitugi2" Content="○" Grid.Row="11" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="健康体育実技Ⅱ" Grid.Row="11" Grid.Column="7"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -354,7 +354,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="12" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="ensyu" Content="○" Grid.Row="12" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="健康体育演習" Grid.Row="12" Grid.Column="7"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -362,7 +362,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="13" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="sport1" Content="○" Grid.Row="13" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="スポーツⅠ" Grid.Row="13" Grid.Column="7"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -370,7 +370,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
 
-        <Button Content="○" Grid.Row="14" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
+        <Button x:Name="sport2" Content="○" Grid.Row="14" Grid.Column="6" Margin="1" Click="Button_Click_kamoku"/>
         <Label Content="スポーツⅡ" Grid.Row="14" Grid.Column="7"
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"/>
@@ -386,7 +386,8 @@
         <Button Content="決定" Grid.Row="15" Grid.Column="4" Grid.ColumnSpan="5"
                 Foreground="White" Background="Black"
                 HorizontalContentAlignment="Center"
-                VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="400" Margin="89,0,0,0"/>
+                VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="400" Margin="89,0,0,0"
+                Click="Button_Click_kettei"/>
 
     </Grid>
 </Page>
