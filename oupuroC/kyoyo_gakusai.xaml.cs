@@ -108,7 +108,6 @@ namespace oupuroC
 
         private void SetDictionary()
         {
-            // いっぱい
             if (!TanniInfo.kyoyoA_ButtonToBool.ContainsKey(sisouA.Name))
             {
                 TanniInfo.kyoyoA_ButtonToBool.Add(sisouA.Name, new Kamoku_states(0, 2));

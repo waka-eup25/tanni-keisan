@@ -58,7 +58,7 @@
                VerticalContentAlignment="Center"
                FontSize="15"/>
 
-        <Button Content="○" Grid.Row="2" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"
+        <Button x:Name="souron" Content="○" Grid.Row="2" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"
                 FontSize="20"/>
         <Label Content="情報学総論" Grid.Row="2" Grid.Column="1"
                HorizontalContentAlignment="Center"
@@ -68,7 +68,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"
                FontSize="20"/>
-        <Button Content="○" Grid.Row="3" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"
+        <Button x:Name="konpute" Content="○" Grid.Row="3" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"
                 FontSize="20"/>
         <Label Content="コンピュータ入門" Grid.Row="3" Grid.Column="1"
                HorizontalContentAlignment="Center"
@@ -78,7 +78,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"
                FontSize="20"/>
-        <Button Content="○" Grid.Row="4" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"
+        <Button x:Name="data" Content="○" Grid.Row="4" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"
                 FontSize="20"/>
         <Label Content="データ処理演習" Grid.Row="4" Grid.Column="1"
                HorizontalContentAlignment="Center"
@@ -88,7 +88,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"
                FontSize="20"/>
-        <Button Content="○" Grid.Row="5" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"
+        <Button x:Name="prog" Content="○" Grid.Row="5" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"
                 FontSize="20"/>
         <Label Content="プログラミング入門" Grid.Row="5" Grid.Column="1"
                HorizontalContentAlignment="Center"
@@ -98,7 +98,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"
                FontSize="20"/>
-        <Button Content="○" Grid.Row="6" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"
+        <Button x:Name="hyogenho" Content="○" Grid.Row="6" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"
                 FontSize="20"/>
         <Label Content="日本語表現法" Grid.Row="6" Grid.Column="1"
                HorizontalContentAlignment="Center"
@@ -108,7 +108,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"
                FontSize="20"/>
-        <Button Content="○" Grid.Row="7" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"
+        <Button x:Name="komisukiA" Content="○" Grid.Row="7" Grid.Column="0" Margin="1" Click="Button_Click_kamoku"
                 FontSize="20"/>
         <Label Content="コミュニケーションスキルズⅠ-A" Grid.Row="7" Grid.Column="1"
                HorizontalContentAlignment="Center"
@@ -118,7 +118,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"
                FontSize="20"/>
-        <Button Content="○" Grid.Row="2" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"
+        <Button x:Name="prog2" Content="○" Grid.Row="2" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"
                 FontSize="20"/>
         <Label Content="プログラミング" Grid.Row="2" Grid.Column="4"
                HorizontalContentAlignment="Center"
@@ -128,7 +128,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"
                FontSize="20"/>
-        <Button Content="○" Grid.Row="3" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"
+        <Button x:Name="pbl" Content="○" Grid.Row="3" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"
                 FontSize="20"/>
         <Label Content="PBL演習" Grid.Row="3" Grid.Column="4"
                HorizontalContentAlignment="Center"
@@ -138,7 +138,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"
                FontSize="20"/>
-        <Button Content="○" Grid.Row="4" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"
+        <Button x:Name="komisukiB" Content="○" Grid.Row="4" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"
                 FontSize="20"/>
         <Label Content="コミュケーションスキルズⅠ-B" Grid.Row="4" Grid.Column="4"
                HorizontalContentAlignment="Center"
@@ -148,7 +148,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"
                FontSize="20"/>
-        <Button Content="○" Grid.Row="5" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"
+        <Button x:Name="sekyu" Content="○" Grid.Row="5" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"
                 FontSize="20"/>
         <Label Content="情報セキュリティと法制度" Grid.Row="5" Grid.Column="4"
                HorizontalContentAlignment="Center"
@@ -158,7 +158,7 @@
                HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center"
                FontSize="20"/>
-        <Button Content="○" Grid.Row="6" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"
+        <Button x:Name="hoho" Content="○" Grid.Row="6" Grid.Column="3" Margin="1" Click="Button_Click_kamoku"
                 FontSize="20"/>
         <Label Content="情報学方法論" Grid.Row="6" Grid.Column="4"
                HorizontalContentAlignment="Center"

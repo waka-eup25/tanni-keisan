@@ -26,12 +26,85 @@ namespace oupuroC
             InitializeComponent();
             this.mainWindow = mainWindow;
             //SetDictionary();
+
+            // ボタンを押していたら画面遷移して戻ってきてもボタンを押したままにしておく
+            void f(Button hoge)
+            {
+                if (TanniInfo.gakubu_h_ButtonToBool[hoge.Name].isClicked == 1)
+                {
+                    hoge.Background = buttonClickedColor;
+                }
+                else
+                {
+                    hoge.Background = buttonColor;
+                }
+            }
+
+            f(souron);
+            f(konpute);
+            f(data);
+            f(prog);
+            f(hyogenho);
+            f(komisukiA);
+            f(prog2);
+            f(pbl);
+            f(komisukiB);
+            f(sekyu);
+            f(hoho);
         }
 
         private void Button_Click_back(object sender, RoutedEventArgs e)
         {
             var start = new start(mainWindow);
             NavigationService.Navigate(start);
+        }
+
+        private void SetDictionary()
+        {
+            if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(souron.Name))
+            {
+                TanniInfo.gakubu_h_ButtonToBool.Add(souron.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(konpute.Name))
+            {
+                TanniInfo.gakubu_h_ButtonToBool.Add(konpute.Name, new Kamoku_states(0, 2));
+            }
+            if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(data.Name))
+            {
+                TanniInfo.gakubu_h_ButtonToBool.Add(data.Name, new Kamoku_states(0, 1));
+            }
+            if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(prog.Name))
+            {
+                TanniInfo.gakubu_h_ButtonToBool.Add(prog.Name, new Kamoku_states(0, 1));
+            }
+            if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(hyogenho.Name))
+            {
+                TanniInfo.gakubu_h_ButtonToBool.Add(hyogenho.Name, new Kamoku_states(0, 1));
+            }
+            if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(komisukiA.Name))
+            {
+                TanniInfo.gakubu_h_ButtonToBool.Add(komisukiA.Name, new Kamoku_states(0, 1));
+            }
+            if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(prog2.Name))
+            {
+                TanniInfo.gakubu_h_ButtonToBool.Add(prog2.Name, new Kamoku_states(0, 1));
+            }
+            if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(pbl.Name))
+            {
+                TanniInfo.gakubu_h_ButtonToBool.Add(pbl.Name, new Kamoku_states(0, 1));
+            }
+            if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(komisukiB.Name))
+            {
+                TanniInfo.gakubu_h_ButtonToBool.Add(komisukiB.Name, new Kamoku_states(0, 1));
+            }
+            if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(sekyu.Name))
+            {
+                TanniInfo.gakubu_h_ButtonToBool.Add(sekyu.Name, new Kamoku_states(0, 1));
+            }
+            if (!TanniInfo.gakubu_h_ButtonToBool.ContainsKey(hoho.Name))
+            {
+                TanniInfo.gakubu_h_ButtonToBool.Add(hoho.Name, new Kamoku_states(0, 1));
+            }
         }
 
         SolidColorBrush buttonClickedColor = new SolidColorBrush(Color.FromArgb(0xFF, 0xFF, 0xED, 0xB3));
@@ -41,19 +114,19 @@ namespace oupuroC
             if (sender is Button btn)
             {
                 // 選択したら背景色変える
-                if (TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(btn.Name))
+                if (TanniInfo.gakubu_h_ButtonToBool.ContainsKey(btn.Name))
                 {
-                    if (TanniInfo.kyoyo_s_ButtonToBool[btn.Name].isClicked == 0)
+                    if (TanniInfo.gakubu_h_ButtonToBool[btn.Name].isClicked == 0)
                     {
                         btn.Background = buttonClickedColor;
                         // Dictionaryいじる クリックした
-                        TanniInfo.kyoyo_s_ButtonToBool[btn.Name].isClicked = 1;
+                        TanniInfo.gakubu_h_ButtonToBool[btn.Name].isClicked = 1;
                     }
                     else
                     {
                         btn.Background = buttonColor;
                         // Dictionaryいじる クリックしてない
-                        TanniInfo.kyoyo_s_ButtonToBool[btn.Name].isClicked = 0;
+                        TanniInfo.gakubu_h_ButtonToBool[btn.Name].isClicked = 0;
                     }
                 }
             }
