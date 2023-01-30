@@ -43,7 +43,8 @@ namespace oupuroC
             tanni_ziyu = int.Parse(a);
 
             // (必要単位数) - (計算した単位数) を出力させる
-            MessageBox.Show("自由科目(10) あと" + (htanni_ziyu - tanni_ziyu).ToString());
+            MessageBox.Show("自由科目 " + tanni_ziyu + " 単位(10単位中) " +
+                "\n\rあと" + (htanni_ziyu - tanni_ziyu).ToString() + "単位");
         }
     }
 }

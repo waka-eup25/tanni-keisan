@@ -123,7 +123,8 @@ namespace oupuroC
             tanni_kyoyo_h = TanniInfo.CalculateTanni(TanniInfo.kyoyo_h_ButtonToBool);
             // (必要単位数) - (計算した単位数) を出力させる
             // 必要単位数は9
-            MessageBox.Show("教養科目 必修(9) あと" + (htanni_kyoyo_h - tanni_kyoyo_h).ToString());
+            MessageBox.Show("教養科目 必修 " + tanni_kyoyo_h + " 単位(9単位中) " +
+                "\n\rあと" + (htanni_kyoyo_h - tanni_kyoyo_h).ToString() + "単位");
         }
     }
 

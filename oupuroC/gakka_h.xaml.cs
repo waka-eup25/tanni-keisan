@@ -202,7 +202,8 @@ namespace oupuroC
             tanni_gakka_h = TanniInfo.CalculateTanni(TanniInfo.gakka_h_ButtonToBool);
             // (必要単位数) - (計算した単位数) を出力させる
             // 必要単位数は47
-            MessageBox.Show("学科専門科目 必修(47) あと" + (htanni_gakka_h -tanni_gakka_h).ToString());
+            MessageBox.Show("学科専門科目 必修 " + tanni_gakka_h + " 単位(47単位中) " +
+                "\b\rあと" + (htanni_gakka_h -tanni_gakka_h).ToString() + "単位");
         }
     }
 }

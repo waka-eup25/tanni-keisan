@@ -305,9 +305,28 @@ namespace oupuroC
             tanni_kyoyoA = TanniInfo.CalculateTanni(TanniInfo.kyoyoA_ButtonToBool);
             tanni_kyoyoB = TanniInfo.CalculateTanni(TanniInfo.kyoyoB_ButtonToBool);
             tanni_gakusaiA = TanniInfo.CalculateTanni(TanniInfo.gakusaiA_ButtonToBool);
-            MessageBox.Show("教養科目 教養領域A(2) あと" + (2-tanni_kyoyoA).ToString()
-                + "\n\r教養科目 教養領域B(2) あと" + (2-tanni_kyoyoB).ToString()
-                + "\n\r教養科目 学際領域A(2) あと" + (2-tanni_gakusaiA).ToString());
+
+            int nokori1 = htanni_kyoyoA - tanni_kyoyoA;
+            if(nokori1 < 0 ) 
+            {
+                nokori1 = 0;
+            }
+            int nokori2 = htanni_kyoyoB - tanni_kyoyoB;
+            if (nokori2 < 0)
+            {
+                nokori2 = 0;
+            }
+            int nokori3 = htanni_gakusaiA - tanni_gakusaiA;
+            if (nokori3 < 0)
+            {
+                nokori3 = 0;
+            }
+            MessageBox.Show("教養科目 教養領域A " + tanni_kyoyoA + " 単位(2単位中) " +
+                "\n\rあと" + nokori1.ToString() + "単位"
+                + "\n\r教養科目 教養領域B " + tanni_kyoyoB + " 単位(2単位中) " +
+                "\n\rあと" + nokori2.ToString() + "単位"
+                + "\n\r教養科目 学際領域A " + tanni_gakusaiA + " 単位(2単位中) " +
+                "\n\rあと" + nokori3.ToString() + "単位");
 
             //溢れた分(必修分の単位数)を削る
             if(tanni_kyoyoA > 2)

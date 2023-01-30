@@ -125,7 +125,13 @@ namespace oupuroC
             tanni_gakubu_s = TanniInfo.CalculateTanni(TanniInfo.gakubu_s_ButtonToBool);
             // (必要単位数) - (計算した単位数) を出力させる
             // 必要単位数は0 学科専門科目選択に算入される
-            MessageBox.Show("学科専門科目 選択(0) あと" + (htanni_gakubu_s - tanni_gakubu_s).ToString());
+            int nokori = htanni_gakubu_s - tanni_gakubu_s;
+            if(nokori < 0) 
+            {
+                nokori = 0;
+            }
+            MessageBox.Show("学科専門科目 選択 " + tanni_gakubu_s + " 単位(0単位中)" +
+                "\n\rあと" + nokori.ToString() + "単位");
         }
     }
 }

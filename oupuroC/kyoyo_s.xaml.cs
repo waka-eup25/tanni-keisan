@@ -277,8 +277,13 @@ namespace oupuroC
 
             // 教養科目の選択科目(kyoyo_s)+教養領域学際領域(必修分を削った)(kyoyo_gakusai) をまとめる
             //13単位から 選択科目の単位数、教養領域学際領域の必修分を削った単位数 を引く
-            MessageBox.Show("教養科目 選択(13) あと" 
-                + (htanni_kyoyo_s - tanni_kyoyo_s - kyoyo_gakusai.tanni_kyoyo_gakusai).ToString());
+            int nokori = htanni_kyoyo_s - tanni_kyoyo_s - kyoyo_gakusai.tanni_kyoyo_gakusai;
+            if(nokori< 0)
+            {
+                nokori = 0;
+            }
+            MessageBox.Show("教養科目 選択 " + tanni_kyoyo_s + " 単位(13単位中) " +
+                "\n\rあと"+ nokori.ToString() + "単位");
 
             
         }
