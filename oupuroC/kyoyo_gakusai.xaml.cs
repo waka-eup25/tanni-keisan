@@ -290,9 +290,42 @@ namespace oupuroC
             }
         }
 
-        private void Butto_Click_kettei(object sender, RoutedEventArgs e)
+        public static int htanni_kyoyoA = 2; // 必要単位数
+        public static int htanni_kyoyoB = 2; // 必要単位数
+        public static int htanni_gakusaiA = 2; // 必要単位数
+        public static int tanni_kyoyoA = 0; // 取った単位数
+        public static int tanni_kyoyoB = 0; // 取った単位数
+        public static int tanni_gakusaiA = 0; // 取った単位数
+        public static int tanni_kyoyo_gakusai = 0; // 取った単位数
+        
+        private void Button_Click_kettei(object sender, RoutedEventArgs e)
         {
-            // 教養科目必修の単位数を出力させる
+            // 教養科目選択の単位数 (教養領域A・B、学際領域A・B) を出力させる
+            // 計算する (計算した単位数が戻り値)
+            tanni_kyoyoA = TanniInfo.CalculateTanni(TanniInfo.kyoyoA_ButtonToBool);
+            tanni_kyoyoB = TanniInfo.CalculateTanni(TanniInfo.kyoyoB_ButtonToBool);
+            tanni_gakusaiA = TanniInfo.CalculateTanni(TanniInfo.gakusaiA_ButtonToBool);
+            MessageBox.Show("教養科目 教養領域A(2) あと" + (2-tanni_kyoyoA).ToString()
+                + "\n\r教養科目 教養領域B(2) あと" + (2-tanni_kyoyoB).ToString()
+                + "\n\r教養科目 学際領域A(2) あと" + (2-tanni_gakusaiA).ToString());
+
+            //溢れた分(必修分の単位数)を削る
+            if(tanni_kyoyoA > 2)
+            {
+                tanni_kyoyo_gakusai += tanni_kyoyoA - 2;
+            }
+            if(tanni_kyoyoB > 2)
+            {
+                tanni_kyoyo_gakusai += tanni_kyoyoB - 2;
+            }
+            if(tanni_gakusaiA > 2)
+            {
+                tanni_kyoyo_gakusai += tanni_gakusaiA - 2;
+            }
+
+            //MessageBox.Show("教養科目 選択(13) あと" + (13 - tanni_kyoyo_gakusai).ToString() + "\r\n(教養領域A・B、学際領域A・Bは含まない)");
+
+            // 教養科目の選択科目(kyoyo_s)+教養領域学際領域(kyoyo_gakusai)の和が19あればよい
         }
 
     }

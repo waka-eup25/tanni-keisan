@@ -132,9 +132,16 @@ namespace oupuroC
             }
         }
 
+        public static int htanni_gakubu_h = 17; // 必要単位数
+        public static int tanni_gakubu_h = 0; //取った単位数
         private void Button_Click_kettei(object sender, RoutedEventArgs e)
         {
-            // 教養科目必修の単位数を出力させる
+            // 学部共通科目必修の単位数を出力させる
+            // 計算する (計算した単位数が戻り値)
+            tanni_gakubu_h = TanniInfo.CalculateTanni(TanniInfo.gakubu_h_ButtonToBool);
+            // (必要単位数) - (計算した単位数) を出力させる
+            // 必要単位数は17
+            MessageBox.Show("学部共通科目 必修(47) あと" + (htanni_gakubu_h - tanni_gakubu_h).ToString());
         }
     }
 }

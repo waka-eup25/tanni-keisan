@@ -114,9 +114,16 @@ namespace oupuroC
             }
         }
 
-        private void Butto_Click_kettei(object sender, RoutedEventArgs e)
+        public static int htanni_kyoyo_h = 9; // 必要単位数
+        public static int tanni_kyoyo_h = 0; //取った単位数
+        private void Button_Click_kettei(object sender, RoutedEventArgs e)
         {
-            // 教養科目必修の単位数を出力させる
+            // 教養科目必修の単位数 (教養領域A・B、学際領域A・Bは含まない) を出力させる
+            // 計算する (計算した単位数が戻り値)
+            tanni_kyoyo_h = TanniInfo.CalculateTanni(TanniInfo.kyoyo_h_ButtonToBool);
+            // (必要単位数) - (計算した単位数) を出力させる
+            // 必要単位数は9
+            MessageBox.Show("教養科目 必修(9) あと" + (htanni_kyoyo_h - tanni_kyoyo_h).ToString());
         }
     }
 

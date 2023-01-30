@@ -105,7 +105,7 @@ namespace oupuroC
             }
             if (!TanniInfo.gakka_sh_ButtonToBool.ContainsKey(debesys.Name))
             {
-                TanniInfo.gakka_sh_ButtonToBool.Add(debesys.Name, new Kamoku_states(0, 21));
+                TanniInfo.gakka_sh_ButtonToBool.Add(debesys.Name, new Kamoku_states(0, 2));
             }
             if (!TanniInfo.gakka_sh_ButtonToBool.ContainsKey(konpaira.Name))
             {
@@ -146,9 +146,16 @@ namespace oupuroC
             }
         }
 
+        public static int htanni_gakka_sh = 16; // 必要単位数
+        public static int tanni_gakka_sh = 0; //取った単位数
         private void Button_Click_kettei(object sender, RoutedEventArgs e)
         {
-            // 教養科目必修の単位数を出力させる
+            // 学科専門科目選択必修の単位数を出力させる
+            // 計算する (計算した単位数が戻り値)
+            tanni_gakka_sh = TanniInfo.CalculateTanni(TanniInfo.gakka_sh_ButtonToBool);
+            // (必要単位数) - (計算した単位数) を出力させる
+            // 必要単位数は16
+            MessageBox.Show("学科専門科目 選択必修(16) あと" + (htanni_gakka_sh - tanni_gakka_sh).ToString());
         }
     }
 }

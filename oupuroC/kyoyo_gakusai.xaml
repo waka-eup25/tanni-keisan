@@ -497,7 +497,7 @@
                 Foreground="White" Background="Black"
                 HorizontalContentAlignment="Center"
                 VerticalContentAlignment="Center" Margin="66,34,0,0" Grid.RowSpan="2"
-                Click="Butto_Click_kettei"/>
+                Click="Button_Click_kettei"/>
 
     </Grid>
 </Page>

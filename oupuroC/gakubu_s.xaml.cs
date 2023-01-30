@@ -116,9 +116,16 @@ namespace oupuroC
                 }
             }
         }
+        public static int htanni_gakubu_s = 0; // 必要単位数
+        public static int tanni_gakubu_s = 0; //取った単位数
         private void Button_Click_kettei(object sender, RoutedEventArgs e)
         {
-            // 教養科目必修の単位数を出力させる
+            // 学科専門科目選択の単位数を出力させる
+            // 計算する (計算した単位数が戻り値)
+            tanni_gakubu_s = TanniInfo.CalculateTanni(TanniInfo.gakubu_s_ButtonToBool);
+            // (必要単位数) - (計算した単位数) を出力させる
+            // 必要単位数は0 学科専門科目選択に算入される
+            MessageBox.Show("学科専門科目 選択(0) あと" + (htanni_gakubu_s - tanni_gakubu_s).ToString());
         }
     }
 }

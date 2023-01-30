@@ -203,11 +203,11 @@ namespace oupuroC
             }
             if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(syosyu_nyumon1.Name))
             {
-                TanniInfo.kyoyo_s_ButtonToBool.Add(syosyu_nyumon1.Name, new Kamoku_states(0, 2));
+                TanniInfo.kyoyo_s_ButtonToBool.Add(syosyu_nyumon1.Name, new Kamoku_states(0, 1));
             }
             if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(syosyu_nyumon2.Name))
             {
-                TanniInfo.kyoyo_s_ButtonToBool.Add(syosyu_nyumon2.Name, new Kamoku_states(0, 2));
+                TanniInfo.kyoyo_s_ButtonToBool.Add(syosyu_nyumon2.Name, new Kamoku_states(0, 1));
             }
             if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(syosyu1.Name))
             {
@@ -219,23 +219,23 @@ namespace oupuroC
             }
             if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(zitugi1.Name))
             {
-                TanniInfo.kyoyo_s_ButtonToBool.Add(zitugi1.Name, new Kamoku_states(0, 2));
+                TanniInfo.kyoyo_s_ButtonToBool.Add(zitugi1.Name, new Kamoku_states(0, 1));
             }
             if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(zitugi2.Name))
             {
-                TanniInfo.kyoyo_s_ButtonToBool.Add(zitugi2.Name, new Kamoku_states(0, 2));
+                TanniInfo.kyoyo_s_ButtonToBool.Add(zitugi2.Name, new Kamoku_states(0, 1));
             }
             if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(ensyu.Name))
             {
-                TanniInfo.kyoyo_s_ButtonToBool.Add(ensyu.Name, new Kamoku_states(0, 2));
+                TanniInfo.kyoyo_s_ButtonToBool.Add(ensyu.Name, new Kamoku_states(0, 1));
             }
             if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(sport1.Name))
             {
-                TanniInfo.kyoyo_s_ButtonToBool.Add(sport1.Name, new Kamoku_states(0, 2));
+                TanniInfo.kyoyo_s_ButtonToBool.Add(sport1.Name, new Kamoku_states(0, 1));
             }
             if (!TanniInfo.kyoyo_s_ButtonToBool.ContainsKey(sport2.Name))
             {
-                TanniInfo.kyoyo_s_ButtonToBool.Add(sport2.Name, new Kamoku_states(0, 2));
+                TanniInfo.kyoyo_s_ButtonToBool.Add(sport2.Name, new Kamoku_states(0, 1));
             }
         }
 
@@ -264,9 +264,23 @@ namespace oupuroC
             }
         }
 
+        public static int htanni_kyoyo_s = 13; // 必要単位数
+        public static int tanni_kyoyo_s = 0; // 取った単位数
+
         private void Button_Click_kettei(object sender, RoutedEventArgs e)
         {
-            // 教養科目必修の単位数を出力させる
+            // 教養科目選択の単位数 (教養領域A・B、学際領域A・Bは含まない) を出力させる
+            // 計算する (計算した単位数が戻り値)
+            tanni_kyoyo_s = TanniInfo.CalculateTanni(TanniInfo.kyoyo_s_ButtonToBool);
+            // (必要単位数) - (計算した単位数) を出力させる
+            // 必要単位数は13
+
+            // 教養科目の選択科目(kyoyo_s)+教養領域学際領域(必修分を削った)(kyoyo_gakusai) をまとめる
+            //13単位から 選択科目の単位数、教養領域学際領域の必修分を削った単位数 を引く
+            MessageBox.Show("教養科目 選択(13) あと" 
+                + (htanni_kyoyo_s - tanni_kyoyo_s - kyoyo_gakusai.tanni_kyoyo_gakusai).ToString());
+
+            
         }
     }
 }

@@ -10,6 +10,38 @@
       Title="sonota">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="Black"/>
+        <TextBlock Text="自由科目で取得済みの単位数を&#xa;入力してください"
+                   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Margin="1"
+                   Foreground="White"
+                   HorizontalAlignment="Stretch"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   FontSize="35"/>
+        <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+               Background="Silver"/>
+        <TextBox x:Name="input" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                 VerticalAlignment="Center" Height="90" Margin="90,0,89,0"
+                 FontSize="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button Content="戻る" Grid.Row="2" Grid.Column="0"
+                Foreground="White" Background="Black"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                FontSize="40" Click="Button_Click_back"/>
+        <Button Content="決定" Grid.Row="2" Grid.Column="1"
+                Foreground="White" Background="Black"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                FontSize="40" Click="Button_Click_kettei"/>
     </Grid>
 </Page>

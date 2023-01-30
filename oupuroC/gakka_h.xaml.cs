@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -192,9 +193,17 @@ namespace oupuroC
             }
         }
 
+        public static int htanni_gakka_h = 47; // 必要単位数
+        public static int tanni_gakka_h = 0; //取った単位数
         private void Button_Click_kettei(object sender, RoutedEventArgs e)
         {
-            // 教養科目必修の単位数を出力させる
+            // 学科専門科目必修の単位数を出力させる
+            // 計算する (計算した単位数が戻り値)
+            tanni_gakka_h = TanniInfo.CalculateTanni(TanniInfo.gakka_h_ButtonToBool);
+            // (必要単位数) - (計算した単位数) を出力させる
+            // 必要単位数は47
+            MessageBox.Show("学科専門科目 必修(47) あと" + (htanni_gakka_h -tanni_gakka_h).ToString());
         }
     }
 }
+

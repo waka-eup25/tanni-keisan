@@ -145,6 +145,6 @@
         <Button Content="決定" Grid.Row="8" Grid.Column="3" Grid.ColumnSpan="2" 
                 FontSize="20"
                 Foreground="White" Background="Black"
-                Click="Butto_Click_kettei"/>
+                Click="Button_Click_kettei"/>
     </Grid>
 </Page>
