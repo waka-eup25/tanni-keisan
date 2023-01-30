@@ -71,18 +71,14 @@ namespace oupuroC
 
         private void Button_Click_gakka_s(object sender, RoutedEventArgs e)
         {
-            /*
-            var gakka_s = new gakka_s();
+            var gakka_s = new gakka_s(mainWindow);
             NavigationService.Navigate(gakka_s);
-            */
         }
 
         private void Button_Click_sonota(object sender, RoutedEventArgs e)
         {
-            /*
-            var sonota = new sonota();
+            var sonota = new sonota(mainWindow);
             NavigationService.Navigate(sonota);
-            */
         }
 
         private void Button_Click_itiran(object sender, RoutedEventArgs e)
