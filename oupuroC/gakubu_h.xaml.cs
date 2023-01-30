@@ -141,7 +141,8 @@ namespace oupuroC
             tanni_gakubu_h = TanniInfo.CalculateTanni(TanniInfo.gakubu_h_ButtonToBool);
             // (必要単位数) - (計算した単位数) を出力させる
             // 必要単位数は17
-            MessageBox.Show("学部共通科目 必修(47) あと" + (htanni_gakubu_h - tanni_gakubu_h).ToString());
+            MessageBox.Show("学部共通科目 必修 " + tanni_gakubu_h + " 単位(17単位中) " +
+                "\n\rあと" + (htanni_gakubu_h - tanni_gakubu_h).ToString() + "単位");
         }
     }
 }
